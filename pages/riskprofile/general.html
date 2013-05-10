@@ -1,0 +1,395 @@
+<form id="riskprofile-general">
+
+  <!-- TAB -->
+  <section name="Agency Details">
+
+ 
+
+    <!-- Text -->
+    <div><label>Name of Agency:</label><input type="text" name="AgencyName"/></div>
+    <div><label>Address:</label><input type="textarea" name="AgencyAddress" ></div>
+ 
+    <div>
+      <label>Agency Type:</label>
+      <select name="AgencyType">
+          <option value="default">Choose a type</option>
+          <option value="individual">Individual</option>
+          <option value="partnership">Partnership</option>
+          <option value="corporation">Corporation</option>
+          <option value="llc">LLC</option>
+          <option value="other">Other</option>
+      </select>
+      
+    </div>
+    
+     <div><label>Federal Employer/ Tax ID No:</label><input type="text" name="FederalID" ></div>
+     <div><label>Website:</label><input type="text" name="website" ></div>
+     
+     <div><label>Date Established:</label><input type="text" name="EstablishedDate" class="datepicker" placeholder="mm/dd/yy"/ ></div>
+     
+    <div class="ideal-wrap">
+     <fieldset>
+     <legend >Agency Contacts</legend>
+     <div><label>Primary:</label><input type="text" name="AgencyContactPrimary" ></div>
+    
+     	
+     <div id="AgencyContact" class="embed ideal-wrap">
+ 
+			  <!-- Form template-->
+			  <div id="AgencyContact_template" class="template">
+			  	<div class="field">
+			    <label for="AgencyContact_#index#">Agency Contact <span id="AgencyContact_label"></span>:</label>
+			    <input id="AgencyContact_#index#" name="AgencyContact[#index#]" type="text"/>
+			    <a id="PriorAgency_remove_current">
+				       <img class="delete" src="jqueryclone/images/delete.png" width="16" height="16" border="0"> 
+				  </a>
+				 </div>
+			  </div>
+			  <!-- /Form template-->
+			   
+			  <!-- No forms template -->
+			  <div id="AgencyContact_noforms_template" ></div>
+			  <!-- /No forms template-->
+			   
+			  <!-- Controls -->
+			  <div id="AgencyContact_controls" class="controls" >
+			    <div id="AgencyContact_add"><img class="delete" src="jqueryclone/images/add.png" width="16" height="16" border="0"> </div>
+  			</div>
+			  </div>
+			  <!-- /Controls -->
+			   
+     </fieldset>
+   </div>
+   
+   
+     
+    
+
+  </section> <!-- END TAB -->
+				
+  <!-- TAB -->
+  <section name="Agency History">
+	
+	<div class="ideal-wrap">
+     <fieldset>
+     <legend >Prior Agency History</legend>
+    
+     	
+     <div id="PriorAgency" class="embed ideal-wrap">
+ 
+			  <!-- Form template-->
+			  <div id="PriorAgency_template" class="template">
+			 <div class="field">
+			    <label for="PriorAgency_#index#_Name">Agency Name <span id="PriorAgency_label"></span>:</label>
+			    <input id="PriorAgency_#index#_Name" name="PriorAgencyName[#index#]" type="text"/>
+				   <a id="PriorAgency_remove_current">
+				       <img class="delete" src="jqueryclone/images/delete.png" width="16" height="16" border="0"> 
+				   </a>
+			 </div>
+			 <div class="field">
+			    <label for="PriorAgency_#index#_Start">Start Date :</label>
+			    <input id="PriorAgency_#index#_Start" class="datepicker" placeholder="mm/dd/yy"/  name="PriorAgencyStart[#index#]" type="text"/>
+			   </div>
+			  <div class="field">
+			    <label for="PriorAgency_#index#_End">End Date :</label>
+			    <input id="PriorAgency_#index#_End" class="datepicker" placeholder="mm/dd/yy"/  name="PriorAgencyEnd[#index#]" type="text"/>
+			   </div>
+			  
+			</div>
+			
+		
+			  <!-- /Form template-->
+			   
+			  <!-- No forms template -->
+			  <div id="PriorAgency_noforms_template" >No Prior History</div>
+			  <!-- /No forms template-->
+			   
+			  <!-- Controls -->
+			  <div id="PriorAgency_controls" class="controls" >
+			    <div id="PriorAgency_add"><img class="delete" src="jqueryclone/images/add.png" width="16" height="16" border="0"> </div>
+  			</div>
+			  </div>
+			  <!-- /Controls -->
+			   
+     </fieldset>
+   </div>
+  
+   <div class="ideal-wrap">
+     <fieldset>
+     <legend >Prior Owners</legend>
+     
+   	<div id="PriorAgencyOwner" class="embed ideal-wrap">
+ 
+			  <!-- Form template-->
+			  <div id="PriorAgencyOwner_template" class="template">
+			 <div class="field">
+			    <label for="PriorAgencyOwner_#index#_Name">Owner Name <span id="PriorAgencyOwner_label"></span>:</label>
+			    <input id="PriorAgencyOwner_#index#_Name" name="PriorAgencyOwnerName[#index#]" type="text"/>
+				   <a id="PriorAgencyOwner_remove_current">
+				       <img class="delete" src="jqueryclone/images/delete.png" width="16" height="16" border="0"> 
+				   </a>
+			 </div>
+			 <div class="field">
+			    <label for="PriorAgencyOwner_#index#_Start">Start Date :</label>
+			    <input id="PriorAgencyOwner_#index#_Start" class="datepicker" placeholder="mm/dd/yy"/  name="PriorAgencyOwnerStart[#index#]" type="text"/>
+			   </div>
+			  <div class="field">
+			    <label for="PriorAgencyOwner_#index#_End">End Date :</label>
+			    <input id="PriorAgencyOwner_#index#_End" class="datepicker" placeholder="mm/dd/yy"/  name="PriorAgencyOwnerEnd[#index#]" type="text"/>
+			   </div>
+			  
+			</div>
+			
+			  <!-- /Form template-->
+			   
+			  <!-- No forms template -->
+			  <div id="PriorAgencyOwner_noforms_template" >No Prior History</div>
+			  <!-- /No forms template-->
+			   
+			  <!-- Controls -->
+			  <div id="PriorAgencyOwner_controls" class="controls" >
+			    <div id="PriorAgencyOwner_add"><img class="delete" src="jqueryclone/images/add.png" width="16" height="16" border="0"> </div>
+  			</div>
+			  </div>
+			  <!-- /Controls -->
+			   
+     </fieldset>
+   </div>
+ 
+
+
+  </section> <!-- END TAB -->
+  
+   <!-- TAB -->
+  <section name="Clusters / Alliances">
+
+   <div class="ideal-wrap">
+     <fieldset>
+     <legend >Clusters/Alliances</legend>
+     
+   	<div id="Alliances" class="embed ideal-wrap">
+ 
+			  <!-- Form template-->
+			  <div id="Alliances_template" class="template">
+			 <div class="field">
+			    <label for="Alliances_#index#_Name">Entity Name <span id="Alliances_label"></span>:</label>
+			    <input id="Alliances_#index#_Name" name="AlliancesName[#index#]" type="text"/>
+				   <a id="Alliances_remove_current">
+				       <img class="delete" src="jqueryclone/images/delete.png" width="16" height="16" border="0"> 
+				   </a>
+			 </div>
+			 <div class="field">
+			    <label for="Alliances_#index#_Start">Start Date of participation:</label>
+			    <input id="Alliances_#index#_Start" class="datepicker" placeholder="mm/dd/yy"/  name="AlliancesStart[#index#]" type="text"/>
+			   </div>
+			  <div class="field">
+			    <label for="Alliances_#index#_End">End Date of participation:</label>
+			    <input id="Alliances_#index#_End" class="datepicker" placeholder="mm/dd/yy"/  name="AlliancesEnd[#index#]" type="text"/>
+			   </div>
+			  
+			</div>
+			
+			  <!-- /Form template-->
+			   
+			  <!-- No forms template -->
+			  <div id="Alliances_noforms_template" >No Prior Participation in Clusters/Alliances</div>
+			  <!-- /No forms template-->
+			   
+			  <!-- Controls -->
+			  <div id="Alliances_controls" class="controls" >
+			    <div id="Alliances_add"><img class="delete" src="jqueryclone/images/add.png" width="16" height="16" border="0"> </div>
+  			</div>
+			  </div>
+			  <!-- /Controls -->
+			   
+     </fieldset>
+   </div>
+
+  </section> <!-- END TAB -->
+  
+   <!-- TAB -->
+  <section name="Acquisitions & Mergers">
+
+     <div class="ideal-wrap">
+     <fieldset>
+     <legend >Acquisitions, Mergers & Purchases</legend>
+     
+   	<div id="Acquisitions" class="embed ideal-wrap">
+ 
+			  <!-- Form template-->
+			  <div id="Acquisitions_template" class="template">
+			 <div class="field">
+			    <label for="Acquisitions_#index#_Name">Entity Name <span id="Acquisitions_label"></span>:</label>
+			    <input id="Acquisitions_#index#_Name" name="AcquisitionsName[#index#]" type="text"/>
+				   <a id="Acquisitions_remove_current">
+				       <img class="delete" src="jqueryclone/images/delete.png" width="16" height="16" border="0"> 
+				   </a>
+			 </div>
+			 <div class="field">
+			    <label for="Acquisitions_#index#_Start">Date of Action:</label>
+			    <input id="Acquisitions_#index#_Start" class="datepicker" placeholder="mm/dd/yy"/  name="AcquisitionsStart[#index#]" type="text"/>
+			   </div>
+			 <div class="field">
+		       <label for="Acquisitions_#index#_Action">Action Taken:</label>
+		     
+				      <select id="Acquisitions_#index#_Action">
+				          <option value="default">Choose a action</option>
+				          <option value="acquisition">Acquisition</option>
+				          <option value="merger">Merger</option>
+				          <option value="purchase">Purchase</option>
+				      </select>
+    	</div>
+			 </div>
+			  <!-- /Form template-->
+			   
+			  <!-- No forms template -->
+			  <div id="Acquisitions_noforms_template" >No Acquisitions, Mergers or Purchases</div>
+			  <!-- /No forms template-->
+			   
+			  <!-- Controls -->
+			  <div id="Acquisitions_controls" class="controls" >
+			    <div id="Acquisitions_add"><img class="delete" src="jqueryclone/images/add.png" width="16" height="16" border="0"> </div>
+  			</div>
+			  </div>
+			  <!-- /Controls -->
+			   
+     </fieldset>
+   </div>
+  </section> <!-- END TAB -->
+
+	 <!-- TAB -->
+  <section name="Licenses">
+
+    <!-- Checkbox -->
+    <div>
+      <label>Licenses (Check all that apply):</label>
+      <label><input type="checkbox" name="licenses[]" value="agent-agency"/>Agent/Agency</label>
+      <label><input type="checkbox" name="licenses[]" value="mga"/>MGA</label>
+      <label><input type="checkbox" name="licenses[]" value="broker"/>Broker</label>
+       <label><input type="checkbox" name="licenses[]" value="surplus"/>Surplus Line Broker</label>
+        <label><input type="checkbox" name="licenses[]" value="consultant"/>Consultant</label>
+       <label><input type="checkbox" name="licenses[]" value="administrator"/>Third Party Administrator</label>
+    </div>
+
+   
+
+  </section> <!-- END TAB -->
+  <!-- Separator -->
+  <div><hr/></div>
+
+  <!-- Buttons -->
+  <div>
+    <button type="submit">Submit</button>
+    <button id="reset" type="button">Reset</button>
+  </div>
+
+</form>
+
+<Script>
+	   var AgencyContactForm = $('#AgencyContact').sheepIt({
+        separator: '',
+        allowRemoveLast: false,
+        allowRemoveCurrent: true,
+        allowRemoveAll: false,
+        allowAdd: true,
+        allowAddN: false,
+        maxFormsCount: 10,
+        minFormsCount: 0,
+        iniFormsCount: 0
+    });
+    
+    
+     var PriorAgencyForm = $('#PriorAgency').sheepIt({
+        separator: '',
+        allowRemoveLast: false,
+        allowRemoveCurrent: true,
+        allowRemoveAll: false,
+        allowAdd: true,
+        allowAddN: false,
+        maxFormsCount: 10,
+        minFormsCount: 0,
+        iniFormsCount: 0
+    });
+ 
+ 		 var PriorAgencyOwners = $('#PriorAgencyOwner').sheepIt({
+        separator: '',
+        allowRemoveLast: false,
+        allowRemoveCurrent: true,
+        allowRemoveAll: false,
+        allowAdd: true,
+        allowAddN: false,
+        maxFormsCount: 10,
+        minFormsCount: 0,
+        iniFormsCount: 0
+    });
+    
+     var AlliancesForm = $('#Alliances').sheepIt({
+        separator: '',
+        allowRemoveLast: false,
+        allowRemoveCurrent: true,
+        allowRemoveAll: false,
+        allowAdd: true,
+        allowAddN: false,
+        maxFormsCount: 10,
+        minFormsCount: 0,
+        iniFormsCount: 0
+    });
+    
+    var AcquisitionsForm = $('#Acquisitions').sheepIt({
+        separator: '',
+        allowRemoveLast: false,
+        allowRemoveCurrent: true,
+        allowRemoveAll: false,
+        allowAdd: true,
+        allowAddN: false,
+        maxFormsCount: 10,
+        minFormsCount: 0,
+        iniFormsCount: 0
+    });
+
+  var options = {
+
+    onFail: function() {
+      alert( $myform.getInvalid().length +' invalid fields.' )
+    },
+
+    inputs: {
+      'password': {
+        filters: 'required pass',
+      },
+      'username': {
+        filters: 'required username',
+        data: {
+          //ajax: { url:'validate.php' }
+        }
+      },
+      'file': {
+        filters: 'extension',
+        data: { extension: ['jpg'] }
+      },
+
+      'comments': {
+        filters: 'min max',
+        data: { min: 50, max: 200 }
+      },
+      'states': {
+        filters: 'exclude',
+        data: { exclude: ['default'] },
+        errors : {
+          exclude: 'Select a State.'
+        }
+      },
+      'langs[]': {
+        filters: 'min max',
+        data: { min: 2, max: 3 },
+        errors: {
+          min: 'Check at least <strong>2</strong> options.',
+          max: 'No more than <strong>3</strong> options allowed.'
+        }
+      }
+    }
+  };
+
+  var $myform = $('#riskprofile-general').idealforms(options).data('idealforms');
+
+</Script>

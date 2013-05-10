@@ -1,0 +1,38 @@
+
+legend{
+	color:black !important;
+}
+
+div.embed {
+	float:left;
+	width: 100%;
+	
+}
+
+div.embed div.field{
+	padding-top:3px;
+	padding-bottom:3px;
+	
+}
+
+div.embed div.template label {
+	float:left;
+	min-width: 225px !important;
+	max-width: 225px !important;
+	top: .4em;
+	max-width: auto;
+	margin: 0 0.5em 0.5em 0;
+}
+
+div.embed div.template img.delete {
+	vertical-align:middle;
+}
+
+div.embed div.noItems {
+	text-align:center;
+}
+
+div.embed div.controls > div, div.embed div.controls input {
+	float:left;
+}
+
